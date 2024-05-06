@@ -1,0 +1,17 @@
+version: '3.1'
+
+volumes:
+  vote_app:
+
+services:
+  vote_app:
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=vote_db
+    volumes:
+      - vote_app:/var/lib/postgres/data
+    ports:
+      - "127.0.0.1:5435:5432"
