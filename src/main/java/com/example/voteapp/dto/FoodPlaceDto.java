@@ -1,15 +1,13 @@
 package com.example.voteapp.dto;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class VoteRqDTO {
+public class FoodPlaceDto {
 
-    private Long foodPlaceId;
+    private String name;
 }
